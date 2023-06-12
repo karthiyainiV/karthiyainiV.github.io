@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NYC Apartment Data Analysis Using SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Karthiyaini</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic7.html">Projects</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+
+					<div id="main">
+						<div class="inner">
+							<h1>NYC Apartment Data Analysis Using SQL</h1>
+							<span class="image main"><img src="https://images.pexels.com/photos/1525612/pexels-photo-1525612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" /></span>
+                                <p>The "NYC Apartment Data set" project utilizes Power BI to analyze and visualize data related to apartments in New York City. The project involves various SQL queries executed on the dataset to derive meaningful insights for visualization purposes. The following queries are used in the project:
+
+									Selecting all data from the "Nycapartment$" table:
+									
+									This query retrieves all the data from the "Nycapartment$" table, which serves as the main data source for the project.
+									Filtering rows where the price is null:
+									
+									This query filters the dataset to include only rows where the price is null, allowing for a separate analysis of missing data.
+									Adding a "Year_wise_review" column:
+									
+									This query adds a new column named "Year_wise_review" to the "Nycapartment$" table, which contains the year extracted from the "last_review" column.
+									Dropping the "review_as_per_year" column:
+									
+									This query drops the "review_as_per_year" column from the "Nycapartment$" table.
+									Grouping by "neighbourhood_group" and counting occurrences:
+									
+									This query groups the data by the "neighbourhood_group" column and counts the occurrences of each group, providing insights into the distribution of apartments across different neighborhood groups.
+									Joining and aggregating data for room types:
+								
+								    This query joins and aggregates data for room types, calculating the average price, maximum reviews per month, and maximum reviews for each room type. The results are sorted by average price, maximum reviews, and maximum reviews per month.
+									Joining and aggregating data for room types (averages):
+									
+									This query joins and aggregates data for room types, calculating the average price, average reviews per month, and average reviews for each room type. The results are sorted by average price, average reviews, and average reviews per month.
+									Calculating average price per night for each room type:
+									
+									This query calculates the average price per night for each room type using a subquery, grouping the data by room type.
+									Counting total occurrences with availability of 365 days:
+									
+									This query counts the total occurrences of each neighborhood group where the availability of apartments is 365 days.
+									Calculating average review percentage per year:
+									
+									This query calculates the average review percentage per year by grouping the data by the "Year_wise_review" column and calculating the average of "reviews_per_month".
+									Analyzing apartment details for 2019:
+									
+									This query creates a common table expression (CTE) named "Apartment_details_2019" that selects specific details from the dataset for the year 2019 and apartments with availability of 365 days. It calculates the average price per night for each neighborhood group.
+									Comparing average room prices on multiple nights with single-day prices:
+									
+									This query compares the average room prices on multiple nights with the price of a single day, grouping the data by "neighbourhood_group". It calculates the average price per night and the average price for a single day.
+									These queries provide insights into various aspects of the NYC apartment dataset, including neighborhood group distribution, average prices, availability, and review trends. The results of these queries can be visualized using Power BI to create interactive and visually appealing dashboards, reports, and charts that enable users to explore the data and gain valuable insights into the NYC apartment market.</p>
+							    <p>Check Out.. <a href="https://github.com/karthiyainiV/NYC_Apartment_Analysis/blob/main/NYC%20Apartment%20SQL%20Query.sql">Query Here</a>.</p>
+
+						</div>
+					</div>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/karthiyainiV" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="www.linkedin.com/in/karthiyainiv1411" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="karthiyaini1197@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
